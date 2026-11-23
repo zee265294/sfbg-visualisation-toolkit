@@ -1,0 +1,19 @@
+# Starting values reproduce the supplied unlabelled portrait SFBG visual style.
+scene: full             # full, binary_aggregation, binary_breakage, ternary_breakage
+geometry: tapered      # tapered or rectangular
+width: 720
+height: 1280
+fps: 30
+duration: 20.0
+particle_count: 790     # 790 = standard; 1185 = dense
+seed: 417
+output: outputs
+formats: [png, mp4, gif]   # Any combination
+image_time: 0.0
+spray:
+  enabled: true
+  entry: right            # right, left, top, bottom (supply pipe entry)
+  nozzle_x: 0.5           # independent nozzle location within vessel
+  nozzle_y: 0.1853448275862069
+  direction: down         # down, up, left, right
+  droplet_events: 1600
